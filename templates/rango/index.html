@@ -7,6 +7,7 @@
 
 {% block body_block %}
 <h1>Rango says...</h1>
+
 <div>
     {% if user.is_authenticated %}
          howdy {{ user.username }}!
@@ -34,6 +35,7 @@
 
 <div>
     <h2>Most Viewed Pages</h2>
+    
     {% if pages %}
          <ul>
           {% for page in pages %}
@@ -50,7 +52,7 @@
 <div>
     
     <img src="{% static 'images/rango.jpg' %}"
-    alt="Picture of Rango" /> <!-- New line -->
+    alt="Picture of Rango" width="600" height="400" /> <!-- New line -->
 
 </div>
 {% endblock %}
